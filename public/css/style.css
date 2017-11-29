@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: Verdana, Geneva, sans-serif; 
+}
+
+.container {
+  display: inline-flex;
+  border-radius: 5px;
+}
+
+header {
+  font-family: 'Francois One', sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  padding-left: 50px; 
+  display: inline-flex;
+}
+
+.headerButton {
+  padding-left: 60%;
+  font-family: Verdana, Geneva, sans-serif; 
+}
+
+.filterSection {
+  display: inline-flex;
+  margin: 10px auto;
+}
+
+main {
+  height: 700px;
+  overflow: scroll;
+  width: 65%;
+  float: left;
+}
+
+#bandControls {
+  float:  right;
+}
+
+.table span {
+  font-size: 1.5em;
+}
+
+aside {
+  padding-left: 5%;
+  width: 150%;
+  float: right;
+}
+
+#download {
+  text-decoration: none;
+}
+
+audio {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex: 1;
+  }
+  aside {
+    flex: 0 0 12em;
+  }
+}
